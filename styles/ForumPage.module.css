@@ -1,0 +1,90 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.filterWrap {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.select,
+.input,
+.textarea {
+  border: 1px solid var(--color-grey-2);
+  background: #111114;
+  color: var(--color-text);
+  border-radius: 8px;
+  padding: 0.6rem;
+}
+
+.button {
+  background: var(--color-primary);
+  color: var(--color-text);
+  border: 0;
+  border-radius: 8px;
+  padding: 0.55rem 0.8rem;
+  cursor: pointer;
+}
+
+.buttonDanger {
+  background: var(--color-bordo);
+}
+
+.questionList {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.card {
+  background: var(--color-card);
+  border-radius: 10px;
+  padding: 0.85rem;
+  border: 1px solid #24242a;
+}
+
+.meta {
+  color: #b8b8c2;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.6rem;
+}
+
+.answers {
+  margin-top: 0.75rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.answer {
+  border: 1px solid #2b2b31;
+  border-radius: 8px;
+  padding: 0.7rem;
+}
+
+.reactions {
+  display: flex;
+  gap: 0.45rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .toolbar {
+    align-items: stretch;
+  }
+}

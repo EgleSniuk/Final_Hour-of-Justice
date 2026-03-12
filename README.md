@@ -22,7 +22,7 @@ Pilnas forumo projektas su:
 
 ## Projekto struktura
 
-- `frontend/` - Next.js frontend projektas
+- `./` - Next.js frontend projektas (šiame repo root kataloge)
 - `../hour-of-justice-be/` - atskiras backend repo (`Final_Hour-of-Justice_be`)
 
 ## Paleidimas (development)
@@ -32,7 +32,6 @@ Pilnas forumo projektas su:
 Repo root kataloge:
 
 ```bash
-cd frontend
 npm install
 copy .env.local.example .env.local
 npm run dev
@@ -73,7 +72,7 @@ NEXT_PUBLIC_API_URL=http://localhost:4000
 Repo root kataloge galite naudoti:
 
 ```bash
-npm run dev:frontend
+npm run dev
 npm run dev:backend
 ```
 

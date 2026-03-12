@@ -1,0 +1,245 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.pageTitle {
+  margin: 0;
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+}
+
+.filterWrap {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filterButton {
+  border: 1px solid #2d2d34;
+  background: var(--color-card);
+  color: var(--color-text);
+  border-radius: 999px;
+  padding: 0.62rem 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.filterButtonActive {
+  border-color: var(--color-hover);
+  background: rgba(16, 57, 99, 0.25);
+}
+
+.episodesList {
+  display: grid;
+  gap: 1rem;
+}
+
+.episodeSection {
+  display: grid;
+  gap: 0.85rem;
+  padding: 1.2rem;
+  border: 2px solid #24242a;
+  border-radius: 12px;
+  background: var(--color-card);
+}
+
+.episodeTopRow {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.episodeItem {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  text-decoration: none;
+  background: var(--color-card);
+  border: 1px solid #24242a;
+  border-radius: 10px;
+  padding: 0.7rem;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  flex: 1;
+}
+
+.episodeItem:hover {
+  border-color: var(--color-hover);
+}
+
+.episodeItemActive {
+  border-color: var(--color-hover);
+  background: rgba(16, 57, 99, 0.2);
+}
+
+.episodeThumb {
+  width: 112px;
+  height: 68px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.episodeTitle {
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 1.32rem;
+  line-height: 1.25;
+}
+
+.readMoreLink {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.readMoreLink:hover {
+  color: var(--color-hover);
+}
+
+.select,
+.input,
+.textarea {
+  border: 1px solid var(--color-grey-2);
+  background: #111114;
+  color: var(--color-text);
+  border-radius: 8px;
+  padding: 0.6rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.questionTextarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.button {
+  background: var(--color-primary);
+  color: var(--color-text);
+  border: 0;
+  border-radius: 8px;
+  padding: 0.55rem 0.8rem;
+  cursor: pointer;
+}
+
+.buttonDanger {
+  background: var(--color-bordo);
+}
+
+.questionList {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.card {
+  background: var(--color-card);
+  border-radius: 10px;
+  padding: 0.85rem;
+  border: 1px solid #24242a;
+}
+
+.questionHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.questionTitle {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+.answerCountBadge {
+  border: 1px solid #34343d;
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  color: #d0d0db;
+  white-space: nowrap;
+}
+
+.meta {
+  color: #b8b8c2;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.6rem;
+}
+
+.answers {
+  margin-top: 0.75rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.answer {
+  border: 1px solid #2b2b31;
+  border-radius: 8px;
+  padding: 0.7rem;
+}
+
+.reactions {
+  display: flex;
+  gap: 0.45rem;
+  margin-top: 0.5rem;
+}
+
+.reactionButton {
+  background: #1a1a20;
+  border: 1px solid #32323b;
+}
+
+.reactionButton:hover {
+  border-color: var(--color-hover);
+}
+
+.reactionButtonActive {
+  border-color: var(--color-hover);
+  background: rgba(16, 57, 99, 0.25);
+}
+
+@media (max-width: 768px) {
+  .toolbar {
+    align-items: stretch;
+  }
+
+  .episodeTopRow {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .readMoreLink {
+    padding-left: 0.2rem;
+  }
+
+  .episodeTitle {
+    font-size: 1.05rem;
+  }
+
+  .episodeThumb {
+    width: 96px;
+    height: 58px;
+  }
+}

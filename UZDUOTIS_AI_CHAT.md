@@ -1,21 +1,21 @@
 # Uzduotis AI Chat
 
-Tikslas: pilnai atskirti projekta i du katalogus `frontend/` ir `backend/`, kad abu veiktu atskirai development rezimu.
+Tikslas: tureti veikianti forumo frontend projekto dali root kataloge ir backend atskirame repo, kad abu veiktu development rezimu.
 
 ## Ka reikia padaryti
 
 1. Sutvarkyti struktura:
-- Visas Next.js kodas turi buti `frontend/` kataloge.
-- Visas Node/Express kodas turi buti `backend/` kataloge.
+- Visas Next.js kodas turi buti siame repo root kataloge (`hour-of-justice/`).
+- Visas Node/Express kodas turi buti atskirame repo `../hour-of-justice-be/`.
 
 2. Sutvarkyti paleidima:
-- `frontend`: `npm install`, `npm run dev` (portas 3000)
-- `backend`: `npm install`, `npm run dev` (portas 4000)
+- `hour-of-justice` (frontend): `npm install`, `npm run dev` (portas 3000)
+- `hour-of-justice-be` (backend): `npm install`, `npm run dev` (portas 4000)
 
 3. Sutvarkyti aplinkos kintamuosius:
-- `frontend/.env.local`:
+- `hour-of-justice/.env.local`:
   - `NEXT_PUBLIC_API_URL=http://localhost:4000`
-- `backend/.env`:
+- `hour-of-justice-be/.env`:
   - `PORT=4000`
   - `MONGODB_URI=<mano_mongodb_uri>`
   - `JWT_SECRET=<mano_secret>`
@@ -27,8 +27,8 @@ Tikslas: pilnai atskirti projekta i du katalogus `frontend/` ir `backend/`, kad 
 - `GET /health` turi veikti.
 
 5. Isvalyti nereikalingus failus root kataloge:
-- Root'e neturi likti frontend/backend runtime failu (`node_modules`, `.next`, `pages`, `server` ir pan.).
-- Root'e gali likti tik bendri failai (pvz. `.git`, `.gitignore`, `README.md`) ir katalogai `frontend/`, `backend/`.
+- `frontend/` katalogo neturi likti.
+- Root'e turi buti Next.js runtime failai (`pages`, `public`, `styles`, `node_modules`, `.next`) nes frontend dabar veikia is root.
 
 6. Atnaujinti dokumentacija (`README.md`):
 - Projekto struktura
@@ -37,8 +37,8 @@ Tikslas: pilnai atskirti projekta i du katalogus `frontend/` ir `backend/`, kad 
 
 ## Priemimo kriterijai
 
-- `cd frontend && npm run dev` sekmingai paleidzia UI ant `http://localhost:3000`.
-- `cd backend && npm run dev` sekmingai paleidzia API ant `http://localhost:4000`.
+- Is `hour-of-justice` katalogo `npm run dev` sekmingai paleidzia UI ant `http://localhost:3000`.
+- Is `hour-of-justice-be` katalogo `npm run dev` sekmingai paleidzia API ant `http://localhost:4000`.
 - `http://localhost:4000/health` grazina `{ "ok": true }`.
 - Frontend forume uzsikrauna klausimai is backend be CORS klaidu.
 

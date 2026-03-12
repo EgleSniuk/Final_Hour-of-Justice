@@ -1,0 +1,165 @@
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem 2.5rem 1.2rem;
+  background-color: var(--color-background, #0B0B0C);
+  color: var(--color-text, #E6E6E6);
+  border-bottom: 1px solid var(--color-card, #1A1A1C);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  flex-wrap: wrap;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.burgerButton {
+  background: none;
+  border: none;
+  color: var(--color-text, #E6E6E6);
+  font-size: clamp(1.9rem, 3vw, 2.4rem);
+  cursor: pointer;
+  margin-right: 1.4rem;
+}
+
+.burgerButton:hover {
+  color: var(--color-hover, #103963);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+.brandLink {
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.brandText {
+  font-size: clamp(1.6rem, 3.6vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.right {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.link {
+  color: var(--color-text, #E6E6E6);
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: var(--color-hover, #103963);
+}
+
+.linkButton {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  text-align: inherit;
+}
+
+.youtubeIcon {
+  color: var(--color-secondary, #7A1F2A);
+  font-size: 1.35rem;
+}
+
+.mobileRight {
+  display: none;
+  margin-left: auto;
+}
+
+.mobileMenuButton {
+  background: none;
+  border: none;
+  color: var(--color-text, #E6E6E6);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.mobileMenuButton:hover {
+  color: var(--color-hover, #103963);
+}
+
+.mobileMenu {
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-card, #1A1A1C);
+  background-color: var(--color-card, #1A1A1C);
+  display: grid;
+  gap: 0.6rem;
+}
+
+.mobileMenuLink {
+  color: var(--color-text, #E6E6E6);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.mobileMenuLink:hover {
+  color: var(--color-hover, #103963);
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding: 1rem 1rem 0.85rem;
+  }
+
+  .left {
+    flex: 0 0 auto;
+  }
+
+  .center {
+    flex: 1;
+    justify-content: center;
+    min-width: 0;
+  }
+
+  .brandText {
+    font-size: clamp(1rem, 5vw, 1.35rem);
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .mobileRight {
+    display: flex;
+    align-items: center;
+  }
+
+  .burgerButton {
+    margin-right: 0.4rem;
+    font-size: 1.9rem;
+  }
+}

@@ -1,0 +1,37 @@
+import { Video } from '../types/video';
+
+export const videos: Video[] = [
+  {
+    id: '1',
+    title: 'The Web of Lies: Casey Anthony',
+    description: 'A young mother stays silent for 31 days after her daughter disappears, leaving behind a trail of contradictions and unanswered questions.',
+    thumbnailUrl: '/assets/casey_anthony.png',
+    videoUrl: 'https://www.youtube.com/@HourofJustice',
+    storyHref: '/stories/casey-anthony',
+    isFeatured: true,
+  },
+  {
+    id: '2',
+    title: 'Jodi Arias: When Love Became Obsession',
+    description: 'What began as a passionate relationship slowly turned into an obsession that neither of them could escape.',
+    thumbnailUrl: '/assets/jodi_arias.png',
+    videoUrl: 'https://www.youtube.com/@HourofJustice',
+    storyHref: '/stories/jodi-arias',
+  },
+  {
+    id: '3',
+    title: 'Dan Markel: The Professor Who Never Saw It Coming',
+    description: 'He was a respected law professor with no known enemies — until investigators began uncovering conflicts hidden behind his quiet life.',
+    thumbnailUrl: '/assets/dan_markel.png',
+    videoUrl: 'https://www.youtube.com/@HourofJustice',
+    storyHref: '/stories/dan-markel',
+  },
+  {
+    id: '4',
+    title: 'Karen Read: The Questions That Remain',
+    description: 'A Boston police officer is found in the snow after a night out, and the woman accused says the real answers may lie inside the house he never reached.',
+    thumbnailUrl: '/assets/karen_read.png',
+    videoUrl: 'https://www.youtube.com/@HourofJustice',
+    storyHref: '/stories/karen-read',
+  },
+];

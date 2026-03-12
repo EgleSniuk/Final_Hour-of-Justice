@@ -1,0 +1,143 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: flex;
+}
+
+.sidebar {
+  width: 300px;
+  height: 100%;
+  background-color: var(--color-card, #1A1A1C);
+  color: var(--color-text, #E6E6E6);
+  display: flex;
+  flex-direction: column;
+  padding: 2.75rem 1.5rem 1.5rem;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+  transform: translateX(-100%);
+  animation: slideIn 0.3s forwards;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.closeButton {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: var(--color-text, #E6E6E6);
+  font-size: 2rem;
+  cursor: pointer;
+  margin-bottom: 1.6rem;
+}
+
+.closeButton:hover {
+  color: var(--color-hover, #103963);
+}
+
+.menuItem {
+  color: var(--color-text, #E6E6E6);
+  text-decoration: none;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  transition: color 0.2s;
+}
+
+.menuItem:hover {
+  color: var(--color-hover, #103963);
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  color: var(--color-text, #E6E6E6);
+  text-align: left;
+  font-size: 1.25rem;
+  padding: 0;
+  margin-bottom: 0.9rem;
+  cursor: pointer;
+}
+
+.menuButton:hover {
+  color: var(--color-hover, #103963);
+}
+
+.episodesList {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0 0 1.25rem 0;
+}
+
+.episodeItem {
+  color: #b8b8c2;
+  text-decoration: none;
+  font-size: 0.96rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.35rem;
+  border-radius: 6px;
+}
+
+.episodeItem:hover {
+  color: var(--color-text, #E6E6E6);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.episodeThumbnail {
+  width: 72px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.episodeTitle {
+  line-height: 1.25;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialLink:hover {
+  opacity: 0.75;
+}
+
+.socialIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: min(88vw, 340px);
+    padding-top: 2.35rem;
+  }
+
+  .menuButton,
+  .menuItem {
+    font-size: 1.1rem;
+  }
+
+  .episodeTitle {
+    font-size: 0.9rem;
+  }
+}

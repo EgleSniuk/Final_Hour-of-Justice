@@ -268,8 +268,8 @@ export default function ForumPage() {
                   <Image
                     src={video.thumbnailUrl}
                     alt={video.title}
-                    width={88}
-                    height={54}
+                    width={160}
+                    height={96}
                     className={styles.episodeThumb}
                   />
                   <span className={styles.episodeTitle}>{video.title}</span>

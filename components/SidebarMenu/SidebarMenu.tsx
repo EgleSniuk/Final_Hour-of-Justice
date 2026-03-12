@@ -29,6 +29,36 @@ const episodes = [
     title: 'Karen Read: The Questions That Remain',
     thumbnail: '/assets/karen_read.png',
   },
+  {
+    href: '/stories/bryan-kohberger',
+    title: 'Bryan Kohberger: The Night That Changed Moscow',
+    thumbnail: '/assets/background.jpg',
+  },
+  {
+    href: '/stories/anna-walsh',
+    title: 'Anna Walsh: A Disappearance Under Scrutiny',
+    thumbnail: '/assets/background.jpg',
+  },
+  {
+    href: '/stories/gabby-petito',
+    title: 'Gabby Petito: The Road Trip That Stopped',
+    thumbnail: '/assets/background.jpg',
+  },
+  {
+    href: '/stories/lori-wallow',
+    title: 'Lori Vallow: The Case That Shocked Idaho',
+    thumbnail: '/assets/background.jpg',
+  },
+  {
+    href: '/stories/kelsey-berret',
+    title: 'Kelsey Berret: The Missing Mother Case',
+    thumbnail: '/assets/background.jpg',
+  },
+  {
+    href: '/stories/suzanne-morphew',
+    title: 'Suzanne Morphew: The Colorado Disappearance',
+    thumbnail: '/assets/background.jpg',
+  },
 ];
 
 export default function SidebarMenu({ isOpen, onClose }: SidebarMenuProps) {

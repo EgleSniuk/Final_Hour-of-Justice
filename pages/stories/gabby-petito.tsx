@@ -12,7 +12,7 @@ export default function GabbyPetitoStoryPage() {
         <title>Gabby Petito: The Road Trip That Stopped | Hour of Justice</title>
         <meta
           name="description"
-          content="A cross-country van journey turns into a missing-person case that captures global attention and raises urgent questions."
+          content="A cross-country van journey takes a tragic turn, transforming a social media travel story into one of the most widely followed missing-person cases in recent years."
         />
       </Head>
 
@@ -20,7 +20,7 @@ export default function GabbyPetitoStoryPage() {
         <header className={styles.hero}>
           <div className={styles.thumbnailWrap}>
             <Image
-              src="/assets/background.jpg"
+              src="/assets/gabby_petito.png"
               alt="Gabby Petito case"
               fill
               className={styles.thumbnail}
@@ -43,7 +43,7 @@ export default function GabbyPetitoStoryPage() {
             <p className={styles.kicker}>Case File</p>
             <h1 className={styles.title}>Gabby Petito: The Road Trip That Stopped</h1>
             <p className={styles.logline}>
-              A cross-country van journey turns into a missing-person case that captures global attention and raises urgent questions.
+              A cross-country van journey takes a tragic turn, transforming a social media travel story into one of the most widely followed missing-person cases in recent years.
             </p>
           </div>
         </header>
@@ -51,13 +51,13 @@ export default function GabbyPetitoStoryPage() {
         <section className={styles.section}>
           <h2>Story Overview</h2>
           <p>
-            Gabby Petito documented a van-life trip across the United States, sharing moments from the road through social media. What appeared to be a travel story shifted dramatically when communication stopped and concern grew among family and followers.
+            Gabby Petito had been documenting a van-life journey across the United States, sharing photos and videos from the road with thousands of followers online. What appeared to be a story of adventure and freedom took a sudden and troubling turn when communication stopped and concern began to grow among her family.
           </p>
           <p>
-            Investigators and search teams worked across state lines to reconstruct the final days of the trip. Body-camera footage, witness accounts, and location data became central pieces in understanding the timeline.
+            Investigators and search teams soon began working across multiple states to reconstruct the final days of the trip. Body-camera footage, witness statements, and digital location data became key pieces in understanding the timeline of events.
           </p>
           <p>
-            The case sparked widespread conversations about domestic violence warning signs, media attention, and how rapidly online communities can mobilize during missing-person investigations.
+            The case quickly captured global attention, sparking wider conversations about domestic violence warning signs, media coverage of missing-person cases, and the powerful role online communities can play in helping investigations gain momentum.
           </p>
         </section>
 

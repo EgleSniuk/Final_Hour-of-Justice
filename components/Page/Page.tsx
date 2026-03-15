@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import Header from '../Header/Header';
-import SidebarMenu from '../SidebarMenu/SidebarMenu';
+import Sidebar from '../Sidebar/Sidebar';
 import Footer from '../Footer/Footer';
 import styles from './styles.module.css';
 
-interface PageTemplateProps {
+interface PageProps {
   children: React.ReactNode;
 }
 
-export default function PageTemplate({ children }: PageTemplateProps) {
+export default function Page({ children }: PageProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -22,8 +22,8 @@ export default function PageTemplate({ children }: PageTemplateProps) {
   return (
     <div className={styles.layout}>
       <Header onMenuClick={toggleSidebar} />
-      <SidebarMenu isOpen={isSidebarOpen} onClose={closeSidebar} />
-      
+      <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
+
       <main className={styles.main}>
         <div className={styles.content}>
           {children}

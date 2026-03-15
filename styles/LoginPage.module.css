@@ -44,6 +44,13 @@
   padding: 0.65rem 0.75rem;
 }
 
+.hint {
+  margin: -0.35rem 0 0;
+  color: #a8a8b3;
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
 .submit {
   background: var(--color-primary);
   color: var(--color-text);

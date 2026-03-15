@@ -20,7 +20,7 @@ export default function SuzanneMorphewStoryPage() {
         <header className={styles.hero}>
           <div className={styles.thumbnailWrap}>
             <Image
-              src="/assets/background.jpg"
+              src="/assets/suzanne_morphew.png"
               alt="Suzanne Morphew case"
               fill
               className={styles.thumbnail}

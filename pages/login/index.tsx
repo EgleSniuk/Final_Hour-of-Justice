@@ -7,6 +7,15 @@ import styles from '../../styles/LoginPage.module.css';
 
 type Mode = 'login' | 'register';
 
+function hasAtLeastThreeLetters(value: string) {
+  const letterMatches = value.match(/\p{L}/gu) ?? [];
+  return letterMatches.length >= 3;
+}
+
+function isValidPassword(value: string) {
+  return value.length >= 7 && /[A-Za-z]/.test(value) && /\d/.test(value);
+}
+
 export default function LoginPage() {
   const [mode, setMode] = useState<Mode>('login');
   const [name, setName] = useState('');
@@ -30,20 +39,35 @@ export default function LoginPage() {
     setError('');
     setSuccess('');
 
-    if (!email.includes('@') || password.length < 6 || (mode === 'register' && name.trim().length < 2)) {
-      setError('Check your input: valid email is required and password must be at least 6 characters.');
+    const trimmedName = name.trim();
+    const trimmedEmail = email.trim();
+
+    if (!trimmedEmail.includes('@')) {
+      setError('Email must contain @.');
+      return;
+    }
+
+    if (!isValidPassword(password)) {
+      setError('Password must be at least 7 characters and include letters and at least one number.');
+      return;
+    }
+
+    if (mode === 'register' && !hasAtLeastThreeLetters(trimmedName)) {
+      setError('Name must contain at least 3 letters.');
       return;
     }
 
     setLoading(true);
     try {
       if (mode === 'register') {
-        await registerUser({ name: name.trim(), email: email.trim(), password });
+        await registerUser({ name: trimmedName, email: trimmedEmail, password });
         setSuccess('Registration successful. You can now sign in.');
         setMode('login');
+        setName('');
+        setEmail(trimmedEmail);
         setPassword('');
       } else {
-        const response = await loginUser({ email: email.trim(), password });
+        const response = await loginUser({ email: trimmedEmail, password });
         setAuth(response.token, response.user);
         router.push('/forum');
       }
@@ -80,12 +104,17 @@ export default function LoginPage() {
 
         <form className={styles.form} onSubmit={handleSubmit}>
           {mode === 'register' && (
-            <input
-              className={styles.input}
-              value={name}
-              onChange={(event) => setName(event.target.value)}
-              placeholder="Name"
-            />
+            <>
+              <input
+                className={styles.input}
+                value={name}
+                onChange={(event) => setName(event.target.value)}
+                placeholder="Name"
+                minLength={3}
+                required
+              />
+              <p className={styles.hint}>Name must contain at least 3 letters.</p>
+            </>
           )}
           <input
             className={styles.input}
@@ -93,14 +122,21 @@ export default function LoginPage() {
             onChange={(event) => setEmail(event.target.value)}
             placeholder="Email"
             type="email"
+            required
           />
+          {mode === 'register' && <p className={styles.hint}>Email must contain @.</p>}
           <input
             className={styles.input}
             value={password}
             onChange={(event) => setPassword(event.target.value)}
             placeholder="Password"
             type="password"
+            minLength={7}
+            required
           />
+          {mode === 'register' && (
+            <p className={styles.hint}>Password must be at least 7 characters and include letters and at least one number.</p>
+          )}
           <button className={styles.submit} disabled={loading} type="submit">
             {loading ? 'Submitting...' : submitText}
           </button>

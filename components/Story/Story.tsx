@@ -1,22 +1,20 @@
-
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './styles.module.css';
 
-interface FeaturedVideoProps {
+interface StoryProps {
   title: string;
   description: string;
   thumbnailUrl: string;
-  videoUrl: string;
   storyHref?: string;
 }
 
-export default function FeaturedVideo({ title, description, thumbnailUrl, videoUrl, storyHref = '/' }: FeaturedVideoProps) {
+export default function Story({ title, description, thumbnailUrl, storyHref = '/' }: StoryProps) {
   return (
     <div className={styles.container}>
       <Link href={storyHref} className={styles.link}>
         <div className={styles.content}>
-          <p className={styles.eyebrow}>Story Spotlight</p>
+          <p className={styles.eyebrow}>THIS WEEK</p>
           <h2 className={styles.title}>{title}</h2>
           <p className={styles.description}>{description}</p>
           <span className={styles.cta}>READ MORE →</span>

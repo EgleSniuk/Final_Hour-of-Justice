@@ -12,7 +12,7 @@ export default function BryanKohbergerStoryPage() {
         <title>Bryan Kohberger: The Night That Changed Moscow | Hour of Justice</title>
         <meta
           name="description"
-          content="A quiet college town in Idaho is shaken after four students are found dead, sparking a nationwide investigation."
+          content="A quiet college town in Idaho is shaken after four university students are found dead, triggering an investigation that quickly draws national and international attention."
         />
       </Head>
 
@@ -20,7 +20,7 @@ export default function BryanKohbergerStoryPage() {
         <header className={styles.hero}>
           <div className={styles.thumbnailWrap}>
             <Image
-              src="/assets/background.jpg"
+              src="/assets/bryan_kohberger.png"
               alt="Bryan Kohberger case"
               fill
               className={styles.thumbnail}
@@ -43,7 +43,7 @@ export default function BryanKohbergerStoryPage() {
             <p className={styles.kicker}>Case File</p>
             <h1 className={styles.title}>Bryan Kohberger: The Night That Changed Moscow</h1>
             <p className={styles.logline}>
-              A quiet college town in Idaho is shaken after four students are found dead, sparking a nationwide investigation.
+              A quiet college town in Idaho is shaken after four university students are found dead, triggering an investigation that quickly draws national and international attention.
             </p>
           </div>
         </header>
@@ -51,13 +51,13 @@ export default function BryanKohbergerStoryPage() {
         <section className={styles.section}>
           <h2>Story Overview</h2>
           <p>
-            In November 2022, the city of Moscow, Idaho, became the center of international headlines after four University of Idaho students were found dead in an off-campus house. The tragedy shocked the community and raised urgent questions about how such a violent crime could happen in a town known for its calm atmosphere.
+            In November 2022, the city of Moscow, Idaho, was thrust into the spotlight after four University of Idaho students were discovered dead inside an off-campus home. The tragedy stunned the community and raised urgent questions about how such a violent crime could occur in a town long known for its peaceful atmosphere.
           </p>
           <p>
-            As investigators worked to reconstruct the timeline, attention turned to digital evidence, surveillance footage, and vehicle movements in the hours surrounding the incident. Weeks of uncertainty followed as families, students, and the public waited for updates.
+            As investigators worked to piece together the events of that night, the focus turned to surveillance footage, digital evidence, and vehicle movements in the hours surrounding the incident. Weeks passed with few answers, leaving families, students, and the wider public anxiously awaiting developments in the case.
           </p>
           <p>
-            When an arrest was finally made, the case shifted into a new phase focused on evidence, legal process, and the challenge of separating rumor from verified facts.
+            When an arrest was eventually made, the investigation entered a new stage — one centered on evidence, legal proceedings, and the challenge of separating speculation from confirmed facts.
           </p>
         </section>
 

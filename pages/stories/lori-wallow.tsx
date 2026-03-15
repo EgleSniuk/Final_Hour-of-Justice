@@ -12,7 +12,7 @@ export default function LoriWallowStoryPage() {
         <title>Lori Vallow: The Case That Shocked Idaho | Hour of Justice</title>
         <meta
           name="description"
-          content="A mother’s children go missing and a multi-state investigation reveals a disturbing timeline."
+          content="Two children vanish, and a multi-state investigation begins to uncover a timeline far more disturbing than anyone first imagined."
         />
       </Head>
 
@@ -20,7 +20,7 @@ export default function LoriWallowStoryPage() {
         <header className={styles.hero}>
           <div className={styles.thumbnailWrap}>
             <Image
-              src="/assets/background.jpg"
+              src="/assets/lori_vallow.png"
               alt="Lori Vallow case"
               fill
               className={styles.thumbnail}
@@ -43,7 +43,7 @@ export default function LoriWallowStoryPage() {
             <p className={styles.kicker}>Case File</p>
             <h1 className={styles.title}>Lori Vallow: The Case That Shocked Idaho</h1>
             <p className={styles.logline}>
-              A mother&apos;s children go missing and a multi-state investigation reveals a disturbing timeline.
+              Two children vanish, and a multi-state investigation begins to uncover a timeline far more disturbing than anyone first imagined.
             </p>
           </div>
         </header>
@@ -51,13 +51,13 @@ export default function LoriWallowStoryPage() {
         <section className={styles.section}>
           <h2>Story Overview</h2>
           <p>
-            What began as concern for two missing children quickly turned into one of the most disturbing investigations in recent true-crime history. As officials tracked movements across multiple states, unanswered questions multiplied.
+            What began as concern for two missing children soon developed into one of the most unsettling investigations in recent true-crime history. As authorities traced movements across several states, the number of unanswered questions continued to grow.
           </p>
           <p>
-            Investigators examined financial records, phone data, and witness accounts while trying to establish a clear timeline. Public attention intensified as each update suggested the case was far more complex than a standard missing-person search.
+            Investigators examined financial records, phone data, and witness accounts while attempting to reconstruct the sequence of events. With each new development, public attention intensified as the case appeared increasingly complex and troubling.
           </p>
           <p>
-            The case became a major legal and media focus, raising difficult conversations about accountability, motive, and warning signs missed along the way.
+            Over time, the investigation evolved into a major legal and media focus, raising difficult questions about accountability, motive, and the warning signs that may have been overlooked.
           </p>
         </section>
 

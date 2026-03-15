@@ -1,9 +1,8 @@
-import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './styles.module.css';
 
-interface VideoCardProps {
+interface CardProps {
   title: string;
   description: string;
   thumbnailUrl: string;
@@ -11,7 +10,7 @@ interface VideoCardProps {
   storyHref?: string;
 }
 
-export default function VideoCard({ title, description, thumbnailUrl, videoUrl, storyHref }: VideoCardProps) {
+export default function Card({ title, description, thumbnailUrl, videoUrl, storyHref }: CardProps) {
   return (
     <article className={styles.card}>
       {storyHref ? (

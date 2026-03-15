@@ -9,10 +9,10 @@ export default function KelseyBerretStoryPage() {
   return (
     <>
       <Head>
-        <title>Kelsey Berret: The Missing Mother Case | Hour of Justice</title>
+        <title>Kouri Richins: The Poisoned Husband Case | Hour of Justice</title>
         <meta
           name="description"
-          content="A young mother disappears in Colorado, triggering a case built on digital clues and conflicting statements."
+          content="A Utah mother and author is accused of poisoning her husband, turning a seemingly ordinary tragedy into a case filled with disturbing questions."
         />
       </Head>
 
@@ -20,8 +20,8 @@ export default function KelseyBerretStoryPage() {
         <header className={styles.hero}>
           <div className={styles.thumbnailWrap}>
             <Image
-              src="/assets/background.jpg"
-              alt="Kelsey Berret case"
+              src="/assets/kouri_richins.png"
+              alt="Kouri Richins case"
               fill
               className={styles.thumbnail}
               sizes="(max-width: 900px) 100vw, 520px"
@@ -41,9 +41,9 @@ export default function KelseyBerretStoryPage() {
 
           <div className={styles.heroText}>
             <p className={styles.kicker}>Case File</p>
-            <h1 className={styles.title}>Kelsey Berret: The Missing Mother Case</h1>
+            <h1 className={styles.title}>Kouri Richins: The Poisoned Husband Case</h1>
             <p className={styles.logline}>
-              A young mother disappears in Colorado, triggering a case built on digital clues and conflicting statements.
+              A Utah mother and author is accused of poisoning her husband, turning a seemingly ordinary tragedy into a case filled with disturbing questions.
             </p>
           </div>
         </header>
@@ -51,13 +51,13 @@ export default function KelseyBerretStoryPage() {
         <section className={styles.section}>
           <h2>Story Overview</h2>
           <p>
-            Kelsey Berret&apos;s disappearance raised immediate concern among family and investigators. In the days that followed, the focus shifted from search efforts to reconstructing her final known contacts and movements.
+            Kouri Richins first appeared in the public eye after publishing a children&apos;s book about coping with grief following the sudden death of her husband. What initially seemed like a story about loss and healing soon became the focus of a major criminal investigation.
           </p>
           <p>
-            Law enforcement worked through phone activity, location evidence, and witness testimony to determine what happened. Each development reshaped the timeline and drew national attention.
+            Authorities began reviewing financial records, digital communications, and witness statements while reexamining the circumstances surrounding her husband&apos;s death. As investigators gathered more evidence, the timeline and motives behind the case became increasingly complex.
           </p>
           <p>
-            The case became a difficult example of how quickly a missing-person report can evolve into a major criminal investigation.
+            The investigation quickly gained national attention, raising difficult questions about trust, financial pressures, and the hidden circumstances that may exist behind a seemingly normal family life.
           </p>
         </section>
 

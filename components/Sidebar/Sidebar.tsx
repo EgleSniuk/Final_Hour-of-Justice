@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './styles.module.css';
 
-interface SidebarMenuProps {
+interface SidebarProps {
   isOpen: boolean;
   onClose: () => void;
 }
@@ -32,36 +32,36 @@ const episodes = [
   {
     href: '/stories/bryan-kohberger',
     title: 'Bryan Kohberger: The Night That Changed Moscow',
-    thumbnail: '/assets/background.jpg',
+    thumbnail: '/assets/bryan_kohberger.png',
   },
   {
     href: '/stories/anna-walsh',
-    title: 'Anna Walsh: A Disappearance Under Scrutiny',
-    thumbnail: '/assets/background.jpg',
+    title: 'Ana Walshe: A Disappearance Under Scrutiny',
+    thumbnail: '/assets/ana_walshe.png',
   },
   {
     href: '/stories/gabby-petito',
     title: 'Gabby Petito: The Road Trip That Stopped',
-    thumbnail: '/assets/background.jpg',
+    thumbnail: '/assets/gabby_petito.png',
   },
   {
     href: '/stories/lori-wallow',
     title: 'Lori Vallow: The Case That Shocked Idaho',
-    thumbnail: '/assets/background.jpg',
+    thumbnail: '/assets/lori_vallow.png',
   },
   {
     href: '/stories/kelsey-berret',
-    title: 'Kelsey Berret: The Missing Mother Case',
-    thumbnail: '/assets/background.jpg',
+    title: 'Kouri Richins: The Poisoned Husband Case',
+    thumbnail: '/assets/kouri_richins.png',
   },
   {
     href: '/stories/suzanne-morphew',
     title: 'Suzanne Morphew: The Colorado Disappearance',
-    thumbnail: '/assets/background.jpg',
+    thumbnail: '/assets/suzanne_morphew.png',
   },
 ];
 
-export default function SidebarMenu({ isOpen, onClose }: SidebarMenuProps) {
+export default function Sidebar({ isOpen, onClose }: SidebarProps) {
   const [isEpisodesOpen, setIsEpisodesOpen] = useState(false);
 
   useEffect(() => {
@@ -83,7 +83,7 @@ export default function SidebarMenu({ isOpen, onClose }: SidebarMenuProps) {
         <button className={styles.closeButton} onClick={onClose}>
           &times;
         </button>
-        
+
         <button
           type="button"
           className={styles.menuButton}

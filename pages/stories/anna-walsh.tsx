@@ -9,10 +9,10 @@ export default function AnnaWalshStoryPage() {
   return (
     <>
       <Head>
-        <title>Anna Walsh: A Disappearance Under Scrutiny | Hour of Justice</title>
+        <title>Ana Walshe: A Disappearance Under Scrutiny | Hour of Justice</title>
         <meta
           name="description"
-          content="A Massachusetts mother disappears at the start of the year, leading to an investigation built around digital traces and conflicting statements."
+          content="A Massachusetts mother disappears at the start of the new year, setting off an investigation built around digital traces, timelines, and conflicting accounts."
         />
       </Head>
 
@@ -20,8 +20,8 @@ export default function AnnaWalshStoryPage() {
         <header className={styles.hero}>
           <div className={styles.thumbnailWrap}>
             <Image
-              src="/assets/background.jpg"
-              alt="Anna Walsh case"
+              src="/assets/ana_walshe.png"
+              alt="Ana Walshe case"
               fill
               className={styles.thumbnail}
               sizes="(max-width: 900px) 100vw, 520px"
@@ -41,9 +41,9 @@ export default function AnnaWalshStoryPage() {
 
           <div className={styles.heroText}>
             <p className={styles.kicker}>Case File</p>
-            <h1 className={styles.title}>Anna Walsh: A Disappearance Under Scrutiny</h1>
+            <h1 className={styles.title}>Ana Walshe: A Disappearance Under Scrutiny</h1>
             <p className={styles.logline}>
-              A Massachusetts mother disappears at the start of the year, leading to an investigation built around digital traces and conflicting statements.
+              A Massachusetts mother disappears at the start of the new year, setting off an investigation built around digital traces, timelines, and conflicting accounts.
             </p>
           </div>
         </header>
@@ -51,13 +51,13 @@ export default function AnnaWalshStoryPage() {
         <section className={styles.section}>
           <h2>Story Overview</h2>
           <p>
-            Anna Walsh was reported missing after plans to travel for work, and the search quickly expanded across multiple locations. As investigators followed her final known movements, the case drew widespread attention across Massachusetts and beyond.
+            Ana Walshe was reported missing after she was expected to travel for work, prompting an extensive search across several locations in Massachusetts. As investigators traced her final known movements, the case quickly drew widespread attention both locally and nationally.
           </p>
           <p>
-            The investigation focused heavily on timelines, electronic records, and physical evidence gathered from places connected to her daily life. Public updates prompted intense discussion about what was confirmed and what remained uncertain.
+            The investigation soon focused on timelines, electronic records, and physical evidence gathered from places connected to her daily life. Public updates fueled intense discussion about what investigators had confirmed — and what questions still remained unanswered.
           </p>
           <p>
-            Over time, the case became less about a single moment and more about piecing together a larger sequence of actions, decisions, and digital footprints.
+            Over time, the case became less about a single moment and more about reconstructing a sequence of events through digital footprints, movements, and decisions made in the days before her disappearance.
           </p>
         </section>
 
